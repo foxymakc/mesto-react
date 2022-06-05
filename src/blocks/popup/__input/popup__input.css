@@ -1,0 +1,20 @@
+.popup__input {
+  display: flex;
+  max-width: 238px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+@media (min-width: 897px) {
+  .popup__input {
+    max-width: 358px;
+  }
+}
+
+.popup__input::placeholder {
+  color: black;
+}

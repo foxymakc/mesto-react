@@ -1,0 +1,7 @@
+.element__like-box {
+  display: flex;
+  width: 22px;
+  height: 35px;
+  margin-right: 20px;
+  flex-direction: column;
+}

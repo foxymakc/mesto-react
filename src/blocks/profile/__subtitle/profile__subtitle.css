@@ -1,0 +1,23 @@
+.profile__subtitle {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 7px;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 897px) {
+  .profile__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    width: 70%;
+    text-align: start;
+  }
+}

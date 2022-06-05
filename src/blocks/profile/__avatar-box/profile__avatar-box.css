@@ -1,0 +1,10 @@
+.profile__avatar-box {
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width: 897px) {
+  .profile__avatar-box {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+.popup__input_about-me {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 897px) {
+  .popup__input_about-me {
+    margin-bottom: 48px;
+  }
+}

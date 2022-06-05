@@ -1,0 +1,13 @@
+.popup__field {
+  position: relative;
+  align-self: start;
+  margin-left: 22px;
+  width: 100%;
+  max-width: 358px;
+}
+
+@media (min-width: 897px) {
+  .popup__field {
+    margin-left: 36px;
+  }
+}
