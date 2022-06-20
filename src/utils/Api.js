@@ -33,8 +33,8 @@ class Api {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
-        name: data.userName,
-        about: data.job,
+        name: data.name,
+        about: data.about,
       }),
     }).then(this._checkResponse);
   }
@@ -68,16 +68,9 @@ class Api {
     }).then(this._checkResponse);
   }
 
-  likeCard(id) {
+  changeLikeCardStatus(id, isLiked) {
     return fetch(this._url + `/cards/likes/${id}`, {
-      method: "PUT",
-      headers: this._headers,
-    }).then(this._checkResponse);
-  }
-
-  disLikeCard(id) {
-    return fetch(this._url + `/cards/likes/${id}`, {
-      method: "DELETE",
+      method: `${isLiked ? "PUT" : "DELETE"}`,
       headers: this._headers,
     }).then(this._checkResponse);
   }
