@@ -15,10 +15,7 @@ function AddPlacePopup(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.onAddPlace({
-      name: name,
-      link: link,
-    });
+    props.onAddPlace({ name, link });
   }
 
   return (
@@ -40,6 +37,7 @@ function AddPlacePopup(props) {
           minLength="2"
           maxLength="30"
           onChange={handleNameChange}
+          value={name || ''}
         />
         <span className="popup__error" id="title-element-error"></span>
       </div>
@@ -51,6 +49,7 @@ function AddPlacePopup(props) {
           name="link"
           required
           onChange={handleLinkChange}
+          value={link || ''}
         />
         <span className="popup__error" id="url-element-error"></span>
       </div>
